@@ -124,6 +124,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <!-- Bottom full‑width white background bar for buttons -->
+    <View
+        android:id="@+id/view_white_bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
+    <!-- Change rounded button -->
+    <TextView
+        android:id="@+id/tv_btn_change"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="24dp"
+        android:text="Change"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/btn_purple_oval"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_white_bottom_bg"
+        app:layout_constraintEnd_toStartOf="@id/tv_btn_cancel"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Cancel rounded button -->
+    <TextView
+        android:id="@+id/tv_btn_cancel"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="Cancel"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/btn_purple_oval"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_white_bottom_bg"
+        app:layout_constraintStart_toEndOf="@id/tv_btn_change"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
