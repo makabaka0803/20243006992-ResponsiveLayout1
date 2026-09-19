@@ -3,72 +3,89 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:padding="16dp">
+    android:background="#000000">
 
+    <!-- Lab1 text on top of black background -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lab 1"
         android:textSize="22sp"
-        android:layout_marginTop="16dp"/>
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Responsive Layout 1"
-        android:textSize="20sp"
-        android:layout_marginVertical="24dp"/>
-
-    <!--four color TextViews-->
+    <!-- White card container: Responsive Layout1 + four coloured text views -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_marginHorizontal="32dp"
+        android:padding="16dp">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:background="#ff0000"
-            android:text="This"
-            android:gravity="center"
-            android:textColor="#ffffff"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Responsive Layout 1"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:background="#0000ff"
-            android:text="is"
-            android:gravity="center"
-            android:textColor="#ffffff"/>
+        <!-- Horizontal linear layout containing four equal-weight coloured text views -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:background="#663399"
-            android:text="my"
-            android:gravity="center"
-            android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="#ff0000"
+                android:text="This"
+                android:gravity="center"
+                android:textColor="#ffffff"/>
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:background="#ffff00"
-            android:text="first"
-            android:gravity="center"
-            android:textColor="#000000"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="#0000ff"
+                android:text="is"
+                android:gravity="center"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="#663399"
+                android:text="my"
+                android:gravity="center"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="#ffff00"
+                android:text="first"
+                android:gravity="center"
+                android:textColor="#000000"/>
+        </LinearLayout>
     </LinearLayout>
 
+    <!-- Android Application text on black background -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Android Application"
         android:textSize="20sp"
-        android:layout_marginVertical="32dp"/>
-
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"/>
+    
 
 </LinearLayout>
