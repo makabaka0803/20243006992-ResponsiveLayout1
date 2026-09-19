@@ -95,6 +95,37 @@
             android:gravity="center"/>
     </LinearLayout>
 
-   
+    <!-- Bottom full-width white container, no extra bottom black space -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingVertical="30dp">
+
+        <!-- Purple oval button: Change -->
+        <TextView
+            android:id="@+id/btnChange"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="24dp"
+            android:text="Change"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/btn_purple_oval"/>
+
+        <!-- Purple oval button: Cancel -->
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/btn_purple_oval"/>
+    </LinearLayout>
 
 </LinearLayout>
