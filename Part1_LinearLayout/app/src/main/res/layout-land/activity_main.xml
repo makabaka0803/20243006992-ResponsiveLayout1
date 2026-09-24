@@ -1,38 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:orientation="horizontal"
-    android:padding="16dp">
+    android:background="#000000">
 
-    <!-- headline and four colors -->
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:text="Lab 1"
             android:textColor="#FFFFFF"
             android:textSize="22sp"
             android:gravity="center"/>
 
+        <!-- headline and four colors -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="24dp"
             android:background="#FFFFFF"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="40dp"
+                android:paddingVertical="24dp"
                 android:text="Responsive Layout 1"
                 android:textColor="#000000"
                 android:textSize="20sp"
@@ -40,9 +38,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="80dp"
                 android:orientation="horizontal">
-
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -73,18 +70,12 @@
                     android:gravity="center"/>
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
-    <!-- two buttons -->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="center_vertical">
+        <!-- two buttons -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:text="Android Application"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
@@ -93,7 +84,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal">
             <Button
                 android:id="@+id/btnChange"
@@ -108,5 +99,7 @@
                 android:layout_weight="1"
                 android:text="Cancel"/>
         </LinearLayout>
+
     </LinearLayout>
-</LinearLayout>
+
+</ScrollView>
